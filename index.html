@@ -393,7 +393,7 @@
 <script>
 async function sendChat(prompt){
   // show user message in UI...
-  const resp = await fetch("https://YOUR_BACKEND_URL/api/chat", {
+  const resp = await fetch("https://script.google.com/macros/s/AKfycbzCFFFfaQbvVMO1YT6kXYYnkU3YtPkJxMXsuk8ZkrT3FFjTwdr1JMBy5Ru8LmDECYw/exec", {
     method: "POST",
     headers: { "Content-Type":"application/json" },
     body: JSON.stringify({ prompt })
