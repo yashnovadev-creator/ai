@@ -385,6 +385,30 @@
     }
   </script>
 </body>
+
+...
+<!-- सारे HTML sections -->
+<footer>...</footer>
+
+<script>
+async function sendChat(prompt){
+  // show user message in UI...
+  const resp = await fetch("https://YOUR_BACKEND_URL/api/chat", {
+    method: "POST",
+    headers: { "Content-Type":"application/json" },
+    body: JSON.stringify({ prompt })
+  });
+
+  const data = await resp.json();
+  // data.reply expected
+  // show AI reply in chat UI...
+}
+</script>
+
+</body>
+</html>
+
+  
 </html>
 
 
