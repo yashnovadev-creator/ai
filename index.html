@@ -234,27 +234,83 @@
   </div>
 </section>
 
-<!-- ABOUT -->
 <section class="about">
-  <div class="img" style="background:none;padding:0">
-    <img src="https://i.ibb.co/4Vj6Y2j/ai-hero.png" 
-         style="width:320px;height:200px;border-radius:14px;object-fit:cover;
-                box-shadow:0 10px 40px rgba(15,23,42,0.15)">
-  </div>
+    <div class="about-container">
+        <img src="https://i.ibb.co/4jJbCvr/ai-banner-blue.png" alt="AI Banner" class="about-img">
 
-  <div class="text">
-    <h3 style="margin:0 0 8px">About YourAI</h3>
-    <p>
-      YourAI is a modern, fully responsive AI web system — designed to chat, generate images, 
-      code, ideas, content, and more.  
-      <br><br>
-      Powered by an OpenAI-compatible backend, it delivers super-fast responses, clean UI, 
-      and seamless user experience.  
-      <br><br>
-      Build your own ChatGPT-style assistant with HTML, CSS, and simple APIs.
-    </p>
-  </div>
+        <div class="about-text">
+            <h2>About YourAI</h2>
+            <p>
+                YourAI is a modern, fast and clean AI assistant built to help users with anything —
+                chatting, coding, writing, knowledge, and automation. This AI web is designed with a 
+                smooth UI, lightweight code and a powerful backend so anyone can create their own personal AI.
+            </p>
+
+            <p>
+                You can easily connect it with any AI API (OpenAI, Gemini, Groq, DeepSeek, etc.) 
+                to generate smart responses in real-time. Customizable UI, strong performance, and simple 
+                setup makes it perfect for your personal or public AI project.
+            </p>
+
+            <a href="#chat" class="btn-start">Start Chatting</a>
+        </div>
+    </div>
 </section>
+
+<style>
+.about {
+    width: 100%;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #eef6ff, #d9eaff);
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1050px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.about-img {
+    width: 380px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #003b80;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+    color: #222;
+}
+
+.btn-start {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #0066ff;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-start:hover {
+    background: #004fcc;
+}
+</style>
 
     <!-- PRICING -->
     <section id="pricing">
